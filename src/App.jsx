@@ -1,7 +1,9 @@
+import { useEffect } from 'react';
 import './App.css';
 import ItemDetailContainer from './components/ItemDetailContainer';
-import ItemListContainer from './components/ItemListContainer'; // Importa sin las llaves
+import ItemListContainer from './components/ItemListContainer'; 
 import { NavBar } from './components/NavBar';
+
 
 
 function App() {
@@ -9,7 +11,6 @@ function App() {
     <>
       <NavBar/>
       <ItemListContainer />
-      {/* <ItemDetailContainer/> */}
     </>
   );
 }

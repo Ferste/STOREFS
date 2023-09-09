@@ -1,9 +1,16 @@
+import { useContext } from "react";
+import {  useCartContext } from "../context/cartContext";
+import { Link } from "react-router-dom";
+import { CartFill } from 'react-bootstrap-icons';
+
 export function CarWidget ({items}){
-    const itemContador = 4; 
+    const {cartQuantity} = useCartContext();
     return (
+    <Link to = "/cart">
     <div className="carrito">
-        <img src="./src/assets/img/carrito.png" alt="carrito" />
-        <span className="contador">{itemContador}</span>
+        <CartFill size={44} /> 
+        <span className="contador">{cartQuantity}</span>
     </div>
+    </Link>
     );
 }
