@@ -6,6 +6,7 @@ import { Link } from 'react-router-dom';
 export function NavBar (){
     return <nav className='navbar'>
         <Link to = "/">
+        <img src="../src/assets/img/logo.png" alt="Logo tienda"></img>
         <h1>STOREFS</h1>
         </Link>
         <Link to="/categoria/Remera"><Button texto= "REMERAS"/></Link>
